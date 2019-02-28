@@ -5,7 +5,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.reaktivity</groupId>
-  <artifactId>nukleus-flow</artifactId>
+  <artifactId>nukleus-flow.spec</artifactId>
   <version>develop-SNAPSHOT</version>
   <name>Flow Nukleus Specification</name>
   <url>https://github.com/reaktivity/nukleus-flow.spec</url>
