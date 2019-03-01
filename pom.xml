@@ -8,6 +8,7 @@
   <artifactId>nukleus-flow.spec</artifactId>
   <version>develop-SNAPSHOT</version>
   <name>Flow Nukleus Specification</name>
+  <description>Flow Nukleus Specification</description>
   <url>https://github.com/reaktivity/nukleus-flow.spec</url>
 
   <licenses>
