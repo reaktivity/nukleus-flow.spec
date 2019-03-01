@@ -21,3 +21,5 @@ connect await ROUTED_PROXY
 connected
 
 read "Hello, world"
+read "Hello, galaxy"
+read "Hello, universe"

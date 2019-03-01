@@ -22,5 +22,9 @@ accepted
 connected
 
 read "Hello, world"
+read "Hello, galaxy"
+read "Hello, universe"
 
 write "Hello, world"
+write "Hello, galaxy"
+write "Hello, universe"
