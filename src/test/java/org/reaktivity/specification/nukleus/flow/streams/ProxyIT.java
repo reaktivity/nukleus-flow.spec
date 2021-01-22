@@ -51,7 +51,29 @@ public class ProxyIT
     @Specification({
         "${scripts}/client.sent.data/client",
         "${scripts}/client.sent.data/server"})
-    public void shouldSendClientData() throws Exception
+    public void shouldReceiveSendClientSentData() throws Exception
+    {
+        k3po.start();
+        k3po.notifyBarrier("ROUTED_PROXY");
+        k3po.finish();
+    }
+
+    @Test
+    @Specification({
+        "${scripts}/client.sent.flush/client",
+        "${scripts}/client.sent.flush/server"})
+    public void shouldReceiveClientSentFlush() throws Exception
+    {
+        k3po.start();
+        k3po.notifyBarrier("ROUTED_PROXY");
+        k3po.finish();
+    }
+
+    @Test
+    @Specification({
+        "${scripts}/client.sent.challenge/client",
+        "${scripts}/client.sent.challenge/server"})
+    public void shouldReceiveClientSentChallenge() throws Exception
     {
         k3po.start();
         k3po.notifyBarrier("ROUTED_PROXY");
@@ -62,7 +84,29 @@ public class ProxyIT
     @Specification({
         "${scripts}/client.received.data/client",
         "${scripts}/client.received.data/server"})
-    public void shouldReceiveClientData() throws Exception
+    public void shouldReceiveClientSentData() throws Exception
+    {
+        k3po.start();
+        k3po.notifyBarrier("ROUTED_PROXY");
+        k3po.finish();
+    }
+
+    @Test
+    @Specification({
+        "${scripts}/server.sent.flush/client",
+        "${scripts}/server.sent.flush/server"})
+    public void shouldReceiveServerSentFlush() throws Exception
+    {
+        k3po.start();
+        k3po.notifyBarrier("ROUTED_PROXY");
+        k3po.finish();
+    }
+
+    @Test
+    @Specification({
+        "${scripts}/server.sent.challenge/client",
+        "${scripts}/server.sent.challenge/server"})
+    public void shouldReceiveServerSentChallenge() throws Exception
     {
         k3po.start();
         k3po.notifyBarrier("ROUTED_PROXY");
@@ -73,7 +117,7 @@ public class ProxyIT
     @Specification({
         "${scripts}/client.sent.and.received.data/client",
         "${scripts}/client.sent.and.received.data/server"})
-    public void shouldSendAndReceiveClientData() throws Exception
+    public void shouldReceiveClientAndServerSentData() throws Exception
     {
         k3po.start();
         k3po.notifyBarrier("ROUTED_PROXY");
