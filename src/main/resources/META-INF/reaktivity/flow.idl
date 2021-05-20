@@ -15,10 +15,6 @@
  */
 scope flow
 {
-    scope control
-    {
-    }
-
     scope stream
     {
     }

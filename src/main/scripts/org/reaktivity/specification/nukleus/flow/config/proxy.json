@@ -1,0 +1,11 @@
+{
+    "bindings":
+    [
+        {
+            "entry": "client#0",
+            "type" : "flow",
+            "kind": "proxy",
+            "exit": "server#0"
+        }
+    ]
+}
